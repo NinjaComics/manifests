@@ -1,0 +1,21 @@
+{
+    "brief": "GNU Radio block for Digital Speech Decoder",
+    "contact": {
+        "author": "Clayton Smith",
+        "email": "argilo@gmail.com"
+    },
+    "copyright_owner": "Clayton Smith",
+    "dependencies": [
+        "libsndfile"
+    ],
+    "description": "\nThe block expects 48000 samples per second input, and outputs sound at\n8000 samples per second.  The input should be FM-demodulated (for\nexample, with GNU Radio's Quadrature Demod block) and should be between\n-1 and 1 while receiving digital signals.  (A quadrature demod gain of\n1.6 works well for me for EDACS Provoice.)  The input signal should\nalso be free of DC bias, so make sure you are tuned accurately, or\nfilter out DC.\n\nTo save CPU cycles, the block detects when the input is zero and avoids\nsending it through DSD.  Thus it helps to put a squelch block before\ngr-dsd, especially if you're using many copies of gr-dsd in parallel.\n\nThe underlying DSD and mbelib were taken from:\n\n    https://github.com/szechyjs/dsd\n    https://github.com/szechyjs/mbelib\n\nNo modifications to mbelib were required, but DSD has been modified to\nbypass the sound card.  The GNU Radio block itself was adapted from the\ngr-howto-write-a-block sample included with GNU Radio.\n",
+    "gr_compatability": {
+        "max": "v3.7.*",
+        "min": "v3.7"
+    },
+    "repo": "https://github.com/argilo/gr-dsd.git",
+    "stable_release": "master",
+    "title": "gr-dsd",
+    "type": "blocks",
+    "website": "https://github.com/argilo/gr-dsd"
+}

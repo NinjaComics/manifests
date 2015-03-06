@@ -1,0 +1,21 @@
+{
+    "brief": "A performance measurement tool",
+    "contact": {
+        "author": "Tim O'Shea",
+        "email": null
+    },
+    "copyright_owner": "Tim O'Shea",
+    "dependencies": [
+        null
+    ],
+    "description": "\n\n# Running the benchmark\n\n    cd gr-benchmark\n    ./gr_profiler.py\n\nor\n\n    ./gr_profiler.py -s  #(to submit results to stats.gnuradio.org)\n\n# Results/Analysis\n\nCompare results at\nhttp://stats.gnuradio.org\n",
+    "gr_compatability": {
+        "max": "v3.7.*",
+        "min": "v3.7.2.1"
+    },
+    "repo": "https://github.com/osh/gr-benchmark.git",
+    "stable_release": "master",
+    "title": "gr-benchmark",
+    "type": "application",
+    "website": "http://stats.gnuradio.org"
+}

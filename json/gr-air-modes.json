@@ -1,0 +1,24 @@
+{
+    "brief": "A receiver for Mode S transponder signals",
+    "contact": {
+        "author": "Nick Foster",
+        "email": "bistromath@gmail.com"
+    },
+    "copyright_owner": "Nick Foster",
+    "dependencies": [
+        "SQLite",
+        "Numpy",
+        "Scipy",
+        "osmosdr"
+    ],
+    "description": "\n\ngr-air-modes implements a software-defined radio receiver for Mode S\ntransponder signals, including ADS-B reports from equipped aircraft.\n\nMode S is the transponder protocol used in modern commercial aircraft.\nA Mode S-equipped aircraft replies to radar interrogation by either\nground radar (secondary surveillance) or other aircraft (\"Traffic\nCollision Avoidance System\", or TCAS). The protocol is an extended\nversion of the Mode A/C protocol used in transponders since the 1940s.\nMode S reports include a unique airframe identifier (referred to\nas the \"ICAO number\") and altitude (to facilitate separation control).\nThis receiver listens to the 1090MHz downlink channel; interrogation\nrequests at 1030MHz are not received or decoded by this program.\n\nAutomatic Dependent Surveillance-Broadcast (ADS-B) is a communication\nprotocol using the Extended Squitter capability of the Mode S transport\nlayer. There are other implementations (VDL Mode 2 and UAT, for\ninstance) but Mode S remains the primary ADS-B transport for commercial\nuse. The protocol is:\n\n* Automatic: it requires no pilot input\n* Dependent: it is dependent on altimeter, GPS, and other aircraft\n  instrumentation for information\n* Surveillance: it provides current information about the transmitting\n  aircraft\n* Broadcast: it is one-way, broadcast to all receivers within range.\n\nADS-B-equipped aircraft broadcast (\"squitter\") their position, velocity,\nflight number, and other interesting information to any receiver within\nrange of the aircraft. Position reports are typically generated once per\nsecond and flight indentification every five seconds.\n",
+    "gr_compatability": {
+        "max": "v3.7.*",
+        "min": "v3.6"
+    },
+    "repo": "https://github.com/bistromath/gr-air-modes.git",
+    "stable_release": "master",
+    "title": "gr-air-modes",
+    "type": "application",
+    "website": "https://github.com/bistromath/gr-air-modes"
+}

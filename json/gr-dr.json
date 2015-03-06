@@ -1,0 +1,26 @@
+{
+    "brief": "DRM transmitter using GNU Radio",
+    "contact": {
+        "author": "KIT CEL",
+        "email": "uncnr[at]student.kit.edu"
+    },
+    "copyright_owner": [
+        "Felix Wunsch",
+        "Communications Engineering Lab, Karlsruhe Institute of Technology"
+    ],
+    "dependencies": [
+        "UHD",
+        "FAAC",
+        "FAAD2"
+    ],
+    "description": "\n\nThis project features a DRM/DRM+ software transmitter fully integrated into GNU\nRadio Companion.\n\nYou are also free to play around with several robustness modes (RM) and\nspectrum occupancies (SO, signal bandwidth) ranging from 4.5 to 20 kHz. The\ncorresponding bit rates vary from below 5 kbps to about 55 kbps. A\nconfiguration that is widely used is RM B (==1) and 10 kHz bandwidth (SO 3).\nAmong other parameters, the station label and a text message can also be set by\nsimply adapting the correspondant blocks' values.\n",
+    "gr_compatability": {
+        "max": "v3.7.*",
+        "min": "v3.7"
+    },
+    "repo": "https://github.com/kit-cel/gr-drm.git",
+    "stable_release": "master",
+    "title": "gr-drm",
+    "type": "application",
+    "website": "https://github.com/kit-cel/gr-drm"
+}
