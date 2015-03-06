@@ -38,7 +38,6 @@ def read_json(json_file):
     fancy with json output.
     '''
     json_data = json.load(json_file)
-    print json_data
     return json_data
 
 
@@ -49,7 +48,6 @@ def read_file(file_name_list):
     '''
     metadata = {}
     for file_name in file_name_list:
-        print file_name
         if file_name.endswith('md'):
             module_name = file_name.strip('.md')
             metadata[module_name] = read_yaml(file_name)
@@ -82,13 +80,11 @@ def write_json(output_loc, metadata):
     for module in metadata.keys():
         json_pp = json.dumps(metadata[module], sort_keys=True,
                     indent=4, separators=(',', ': '))
-        print json_pp
         module_file_parts = module.split('/')
         if output_loc is None:
             output_loc = '/'.join(module_file_parts[:-1])
         fname = output_loc + "/" + module_file_parts[-1] + ".json"
         ofile = open(fname, "w")
-        print "wrote to file %s" % fname
         ofile.write(json_pp)
         ofile.close()
 
