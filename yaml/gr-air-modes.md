@@ -17,6 +17,7 @@ stable_release: master
 title: gr-air-modes
 type: application
 website: https://github.com/bistromath/gr-air-modes
+readmeraw: https://raw.githubusercontent.com/bistromath/gr-air-modes/master/README
 --- 
 
 gr-air-modes implements a software-defined radio receiver for Mode S

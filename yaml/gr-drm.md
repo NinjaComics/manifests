@@ -18,6 +18,7 @@ stable_release: master
 title: gr-drm
 type: application
 website: https://github.com/kit-cel/gr-drm
+readmeraw: https://raw.githubusercontent.com/kit-cel/gr-drm/master/README.md
 --- 
 
 This project features a DRM/DRM+ software transmitter fully integrated into GNU

@@ -14,6 +14,7 @@ stable_release: master
 title: gr-dsd
 type: blocks
 website: https://github.com/argilo/gr-dsd
+readmeraw: https://raw.githubusercontent.com/argilo/gr-dsd/master/README 
 --- 
 The block expects 48000 samples per second input, and outputs sound at
 8000 samples per second.  The input should be FM-demodulated (for

@@ -14,6 +14,7 @@ stable_release: master
 title: gr-dvbs2
 type: application
 website: https://github.com/drmpeg/gr-dvbs2
+readmeraw: https://raw.githubusercontent.com/drmpeg/gr-dvbs2/master/README
 --- 
 
 The goal of this project is to build a software-defined DVB-S2

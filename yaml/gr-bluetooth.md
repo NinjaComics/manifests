@@ -16,6 +16,7 @@ stable_release: master
 title: gr-bluetooth
 type: application
 website: http://gr-bluetooth.sourceforge.net/
+readmeraw: https://raw.githubusercontent.com/greatscottgadgets/gr-bluetooth/master/README.md
 --- 
 
 An implementation of the Bluetooth baseband layer for GNU Radio for

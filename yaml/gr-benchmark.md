@@ -14,6 +14,7 @@ stable_release: master
 title: gr-benchmark
 type: application
 website: http://stats.gnuradio.org
+readmeraw: https://raw.githubusercontent.com/osh/gr-benchmark/master/README
 --- 
 
 # Running the benchmark
